@@ -29,10 +29,10 @@ class App {
   }
 
   private initialiseDatabaseConnection() {
-    const currentDB =
-      process.env.NODE_ENV == "production"
-        ? process.env.PROD_DB
-        : process.env.LOCAL_DB;
+    // const currentDB =
+    //   process.env.NODE_ENV == "production"
+    //     ? process.env.PROD_DB
+    //     : process.env.LOCAL_DB;
     mongoose
       .connect(`${process.env.PROD_DB}`)
       .then(() => console.log("DB connected successfully"))
