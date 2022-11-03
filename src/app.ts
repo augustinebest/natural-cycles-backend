@@ -34,7 +34,7 @@ class App {
         ? process.env.PROD_DB
         : process.env.LOCAL_DB;
     mongoose
-      .connect(`${currentDB}`)
+      .connect(`${process.env.PROD_DB}`)
       .then(() => console.log("DB connected successfully"))
       .catch((error) => console.log(error));
   }
