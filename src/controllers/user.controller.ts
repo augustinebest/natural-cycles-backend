@@ -23,7 +23,7 @@ class UserController implements Controller {
       const phoneNumber: string = req.params.phoneNumber;
       const result = await this.UserService.getUser(phoneNumber);
       HttpSuccess(res, "User fetched successfully", result, 200);
-    } catch (error) {
+    } catch (error: any) {
       HttpFailure(res, error.message, 400);
     }
   };
@@ -33,7 +33,7 @@ class UserController implements Controller {
       const payload: IUser = req.body;
       const result = await this.UserService.updateUser(payload);
       HttpSuccess(res, "User updated successfully", result, 201);
-    } catch (error) {
+    } catch (error: any) {
       HttpFailure(res, error.message, 400);
     }
   };
