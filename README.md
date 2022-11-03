@@ -8,7 +8,7 @@ kindly follow the step below to run this project locally on your machine for dev
 <strong>NOTE:</strong> make sure you're on the root backend directory and mongoDB is running <br />
 
 #### Step 1
-<strong>Install the app</strong>
+<strong>Install the app after Git Clone</strong>
 
 ```
 npm install
