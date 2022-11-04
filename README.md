@@ -27,4 +27,4 @@ npm run dev
 <strong>NOTE:</strong> This will connect to the local database and server runs on port `7210`<br>
 
 This is how the Database looks like:
-![ Database Screenshot](./uploads/DBscreenshot.png "DB screenshoot")
+![ Database Screenshot](./uploads/DB-screenshot.png "DB screenshoot")
